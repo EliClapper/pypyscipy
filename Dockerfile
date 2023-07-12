@@ -13,7 +13,7 @@ RUN apt-get -y update \
 
 RUN pypy3 -m pip install --upgrade pip  
 
-# install requirements (only scipy 1.10.0)
+# install requirements (scipy and scikit)
 COPY requirements.txt ./
 RUN pypy3 -m pip install -r requirements.txt --no-cache
 
